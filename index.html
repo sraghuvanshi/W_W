@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Workshop On C | NCS</title>
+    <!-- reveal.js CSS Files -->
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css">
+    <!-- Code syntax highlight CSS file -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <!-- BEGINNNG SLIDES ================================== -->
+        <section>
+          <h1>Workshop</h1>
+        </section>
+        
+        
+        <!-- SILDES END----------------------------------------- -->
+      </div>
+    </div>
+    <!-- reveal.js JS Files -->
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+    <script>
+    // Required, even if empty.
+    Reveal.initialize({
+    history: true,
+    transition:'convex',
+    dependencies: [
+    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+    ]
+    });
+    Reveal.configure({ slideNumber: 'h.v' });
+    </script>
+    <!-- Script to save PDF. Put "print-pdf" in query string and press Ctrl+P to save. -->
+    <script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = 'css/print/pdf.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+    </script>
+  </body>
+</html>
