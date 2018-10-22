@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+T<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Workshop On C | NCS</title>
+    <title>Workshop On Web | NCS</title>
     <!-- reveal.js CSS Files -->
     <link rel="stylesheet" href="css/reveal.css">
     <link rel="stylesheet" href="css/theme/black.css">
@@ -16,11 +16,257 @@
     <div class="reveal">
       <div class="slides">
         <!-- BEGINNNG SLIDES ================================== -->
-        <section>
-          <h1>Workshop on HTML and CSS</h1>
+            <section>
+              <h3>html & css is hard</h3>
+              <p>(But it doesn’t have to be)</p>
+            </section>
+             <section data-transition="zoom">
+            <h1>Welcome To HTML/CSS <small>Beginner Workshop</small></h1>
+            <br>
+            <p><small>
+            Press <code>Spacebar</code> for next slide. <br>
+            <code>Esc</code> or '<code>o</code>' for overview.
+          </small></p>
+        </section>
+        <section data-transition="concave">
+            <h3>THERE'S ONLY ONE RULE</h3>
+            <p>&bull; Every question is important. </p>
+            <hr>
+            <p>Let's begin</p>
+        </section>
+        <section data-transition="concave">
+            <h3> What is HTML ? </h3>
+          <p> HTML defines the content of every web page on the Internet. </p>
+          <p>It stands for <strong>Hyper Text Markup Language</strong></p>
+        </section>
+        <section data-transition="zoom">
+          <section>
+            <p>First things first!</p>
+            <h4><a>HTML is <strong>NOT</strong> a programming language.</a></h4>
+            <p>its a markup language.</p>
+           </section>
+          <section>
+            <h1>MarkUp  VS  Programming </h1    >
+            <table>
+              <thead class="table">
+                <tr>
+                  <th>Markup Languages</th>
+                  <th>Programming Languages</th>
+                </tr>
+              </thead>
+              <tbody class="table">
+                <tr>
+                  <td class="fragment" data-fragment-index="1">Used to control the <em>presentation</em> and <em>structure</em> of the content.</td>
+                  <td class="fragment" data-fragment-index="2">Used to create <em>instructions</em> for machine to accomplish tasks.</td>
+                </tr>
+                <tr>
+                  <td class="fragment" data-fragment-index="3">e.g. HTML, CSS </td>
+                  <td class="fragment" data-fragment-index="3">e.g. Java, C, C++, python</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
         </section>
         
+        <section data-transition="concave">
+            <section>
+              <h2>History Of HTML</h2>
+              <ul>
+                <li>Invented by Tim Berners Lee in 1989</li>
+                <li>First website ceated <a href="http://info.cern.ch/hypertext/WWW/TheProject.html">http://info.cern.ch/hypertext/WWW/TheProject.html</a> </li>
+              </ul>
+            </section>
+            <section>
+              <table>
+                <thead class="table">
+                  <tr>
+                    <th>First Website</th>
+                    <th>Modern Day Website</th>
+                  </tr>
+                </thead>
+                <tbody class="table">
+                  <tr>
+                    <td> <img src="assets/first.png" alt="First Website"> </td>
+                    <td> <img src="assets/modernn.png" alt="Modern Day Website"> </td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+        </section>
+        <section data-transition="concave">
+          <h2>MUST KNOW WEB TERMINOLOGIES <br></h2>
+          <ul>
+            <li><strong>Front End</strong><br>
+              The outwardly visible elements of a website or application</li>
+              <li><strong>Back-End — Behind The Scenes</strong><br>
+              The inner workings and functionality of a website or application.</li>
+          </ul>
+        </section>
+        <section >
+          <h3>SETUP</h3>
+          <p>For this workshop, a decent <strong>text editor</strong> and <strong>web browser</strong>  is all you need. </p>
+          <img src="assets/setup.png" alt="Setup"> 
+
+        </section>
         
+        <section data-transition="concave">
+          Basic Folder Structure
+          <pre> <code>
+            |-- css
+            |   |-- style.css
+            |
+            |-- img
+            |   |-- border.jpg
+            |   |-- logo.gif
+            |
+            |-- js
+            |   |-- myscript.js
+            |
+            |-- html (other pages)
+            |   |-- contact.html
+            |   |-- home.html
+            |
+            |-- index.html
+          </code></pre>
+        </section>
+        <section>
+            <h2>HTML Elements & Tags </h2>
+            <p>An HTML element usually consists of a <strong>opening</strong> and a <strong>closing</strong> tag. Lets look at the following example: </p>
+            <img class="stretch" src="assets/element.jpg" alt="html element">
+        </section>
+         <section>
+          <section>
+            <h3> html basics </h3>
+            <p>
+              <ul>
+                <li>HTML documents start with a <em>document type</em> declaration: <strong>&lt;!DOCTYPE html&gt;</strong></li>
+                <li>all documents must begin with a opening  <strong>&lt;html&gt;</strong> tag and end with a closing <strong>&lt;/html&gt;</strong> tag.</li>
+              </ul>
+
+              <pre><code data-noescape>
+
+              &lt;!DOCTYPE html&gt;
+              &lt;html&gt;
+                  &lt;head&gt;
+                   -- Metadata goes here --
+                  &lt;/head&gt;
+                  &lt;body&gt;
+                   -- Content goes here --
+                  &lt;/body&gt;
+              &lt;/html&gt;
+
+              </code></pre>
+            </p>
+         
+          </section>
+            
+          
+          <section>
+            <h3> head and body tags </h3>
+            <ul>
+              <li>
+                &lt;head&gt; tag contains all "extra" information about a webpage.
+                  <ul>
+                    <li> meta data</li>
+                    <li>title of the page </li>
+                    <li>css and javascript file references</li>
+                  </ul>
+              </li>
+              <hr>
+              <li>
+                &lt;body&gt; tag contains all the visual content of the page
+                  <ul>
+                    <li>images, paragraphs, links</li>
+                    <li>basically, everything that the user sees on the page goes in the &lt;body&gt; tag</li>
+                  </ul>
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <small>Let's take a look at an example.</small>
+            <pre><code data-noescape>
+            &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                  &lt;head&gt;
+                    &lt;meta charset=&quot;utf-8&quot;&gt;
+                    &lt;title&gt; Page Title &lt;/title&gt;
+                  &lt;/head&gt;
+                  &lt;body&gt;
+                    &lt;h1&gt;This is a Heading&lt;/h1&gt;
+                  &lt;/body&gt;
+                &lt;/html&gt;
+
+            </code></pre>
+          </section>
+          <section>
+                <p>This is how it should look in browser.</p>
+                <img class="stretch" src="assets/smple.png" alt="">
+              </section>
+       </section
+
+        <section>
+          <section>
+            
+          
+
+             <section data-transition="concave">
+          <h5>Some other commonly used HTML tags </h5>
+            <p>1. Heading tags <br>
+              <pre><code>
+                &lt;h1&gt; heading 1 &lt;/h1&gt;
+                &lt;h2&gt; heading 2 &lt;/h2&gt;
+                &lt;h3&gt; heading 3 &lt;/h3&gt;
+                &lt;h4&gt; heading 4 &lt;/h4&gt;
+                &lt;h5&gt; heading 5 &lt;/h5&gt;
+                &lt;h6&gt; heading 6 &lt;/h6&gt;
+              </code></pre>
+            </p>
+            <p>
+              2. Paragraph tags
+              <pre><code>
+                &lt;p&gt; This is a paragraph.&lt;/p&gt;
+              </code></pre>
+            </p>
+          </section>
+             <section>
+            <h4>3. Anchor Tags </h4>
+            <p>
+              HTML anchor tags link an image/text to another website/ document. <br>
+              <pre><code data-trim>
+                    &lt;a href=&quot;http://www.hackncs.com&quot;&gt; NCS &lt;/a&gt;
+              </code></pre>
+              Click on the text below to go to the link http://www.hackncs.com <br>
+              <a href="http://www.hackncs.com" target="_blank">NCS</a> 
+              <p>&bull;</p>
+             
+            </p>
+          </section>
+          <section data-transition="zoom">
+            
+              <h4>4. HTML Lists</h4>
+              
+                <pre><code data-noescape>
+                  &lt;h1&gt; Lists &lt;/h1&gt;
+                    &lt;p&gt;This is how you make an unordered list: &lt;/p&gt;
+                    &lt;ul&gt;
+                    &lt;li&gt;Add a "ul" element (it stands for unordered list)&lt;/li&gt;
+                    &lt;li&gt;Add each item in its own "li" element&lt;/li&gt;
+                    &lt;li&gt;They don't need to be in any particular order&lt;/li&gt
+                    &lt;ul&gt;
+                </code></pre>
+                    <img src="assets/list.png" alt="List" style="height: 300px;">
+            
+          </section>
+          </section>
+          </section>
+          <section>
+            <h6>Knowing only HTML is not enough !</h6>
+            <p>But, don’t be underwhelmed. Gaining fluency in HTML is a significant first step towards becoming a real web developer. </p>
+
+            <img src="assets/css.png" alt="Web" style="height: 500px;" >
+          </section>
+            
         <!-- SILDES END----------------------------------------- -->
       </div>
     </div>
