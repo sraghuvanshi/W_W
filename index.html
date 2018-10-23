@@ -16,8 +16,12 @@
     <div class="reveal">
       <div class="slides">
         <!-- BEGINNNG SLIDES ================================== -->
+            <section>
+              <h3>html & css is hard</h3>
+              <p>(But it doesn’t have to be)</p>
+            </section>
              <section data-transition="zoom">
-            <h1>Intro To HTML/CSS <small>Beginner Workshop</small></h1>
+            <h1>Welcome To HTML/CSS <small>Beginner Workshop</small></h1>
             <br>
             <p><small>
             Press <code>Spacebar</code> for next slide. <br>
@@ -44,13 +48,13 @@
           <section>
             <h1>MarkUp  VS  Programming </h1    >
             <table>
-              <thead>
+              <thead class="table">
                 <tr>
                   <th>Markup Languages</th>
                   <th>Programming Languages</th>
                 </tr>
               </thead>
-              <tbody>
+              <tbody class="table">
                 <tr>
                   <td class="fragment" data-fragment-index="1">Used to control the <em>presentation</em> and <em>structure</em> of the content.</td>
                   <td class="fragment" data-fragment-index="2">Used to create <em>instructions</em> for machine to accomplish tasks.</td>
@@ -63,9 +67,428 @@
             </table>
           </section>
         </section>
+        
+        <section data-transition="concave">
+            <section>
+              <h2>History Of HTML</h2>
+              <ul>
+                <li>Invented by Tim Berners Lee in 1989</li>
+                <li>First website created <a href="http://info.cern.ch/hypertext/WWW/TheProject.html">http://info.cern.ch/hypertext/WWW/TheProject.html</a> </li>
+              </ul>
+            </section>
+            <section>
+              <table>
+                <thead class="table">
+                  <tr>
+                    <th>First Website</th>
+                    <th>Modern Day Website</th>
+                  </tr>
+                </thead>
+                <tbody class="table">
+                  <tr>
+                    <td> <img src="assets/first.png" alt="First Website"> </td>
+                    <td> <img src="assets/modernn.png" alt="Modern Day Website"> </td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+        </section>
+        <section data-transition="concave">
+          <h2>MUST KNOW WEB TERMINOLOGIES <br></h2>
+          <ul>
+            <li><strong>Front End</strong><br>
+              The outwardly visible elements of a website or application</li>
+              <li><strong>Back-End — Behind The Scenes</strong><br>
+              The inner workings and functionality of a website or application.</li>
+          </ul>
+        </section>
+        <section >
+          <h3>SETUP</h3>
+          <p>For this workshop, a decent <strong>text editor</strong> and <strong>web browser</strong>  is all you need. </p>
+          <img src="assets/setup.png" alt="Setup"> 
+
+        </section>
+        
+        <section data-transition="concave">
+          Basic Folder Structure
+          <pre><code>
+            |-- css
+            |   |-- style.css
+            |
+            |-- img
+            |   |-- border.jpg
+            |   |-- logo.gif
+            |
+            |-- js
+            |   |-- myscript.js
+            |
+            |-- html (other pages)
+            |   |-- contact.html
+            |   |-- home.html
+            |
+            |-- index.html
+          </code></pre>
+        </section>
+        <section>
+            <h2>HTML Elements & Tags </h2>
+            <p>An HTML element usually consists of a <strong>opening</strong> and a <strong>closing</strong> tag. Lets look at the following example: </p>
+            <img class="stretch" src="assets/element.jpg" alt="html element">
+        </section>
+         <section>
+          <section>
+            <h3> html basics </h3>
+            <p>
+              <ul>
+                <li>HTML documents start with a <em>document type</em> declaration: <strong>&lt;!DOCTYPE html&gt;</strong></li>
+                <li>all documents must begin with a opening  <strong>&lt;html&gt;</strong> tag and end with a closing <strong>&lt;/html&gt;</strong> tag.</li>
+              </ul>
+
+              <pre><code data-noescape>
+
+              &lt;!DOCTYPE html&gt;
+              &lt;html&gt;
+                  &lt;head&gt;
+                   -- Metadata goes here --
+                  &lt;/head&gt;
+                  &lt;body&gt;
+                   -- Content goes here --
+                  &lt;/body&gt;
+              &lt;/html&gt;
+
+              </code></pre>
+            </p>
+         
+          </section>
             
+          
+          <section>
+            <h3> head and body tags </h3>
+            <ul>
+              <li>
+                &lt;head&gt; tag contains all "extra" information about a webpage.
+                  <ul>
+                    <li> meta data</li>
+                    <li>title of the page </li>
+                    <li>css and javascript file references</li>
+                  </ul>
+              </li>
+              <hr>
+              <li>
+                &lt;body&gt; tag contains all the visual content of the page
+                  <ul>
+                    <li>images, paragraphs, links</li>
+                    <li>basically, everything that the user sees on the page goes in the &lt;body&gt; tag</li>
+                  </ul>
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <small>Let's take a look at an example.</small>
+            <pre><code data-noescape>
+            &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                  &lt;head&gt;
+                    &lt;meta charset=&quot;utf-8&quot;&gt;
+                    &lt;title&gt; Page Title &lt;/title&gt;
+                  &lt;/head&gt;
+                  &lt;body&gt;
+                    &lt;h1&gt;This is a Heading&lt;/h1&gt;
+                  &lt;/body&gt;
+                &lt;/html&gt;
+
+            </code></pre>
+          </section>
+          <section>
+                <p>This is how it should look in browser.</p>
+                <img class="stretch" src="assets/smple.png" alt="">
+              </section>
+       </section
+
+        <section>
+          <section>
+            
+          
+
+             <section data-transition="concave">
+          <h5>Some other commonly used HTML tags </h5>
+            <p>1. Heading tags <br>
+              <pre><code>
+                &lt;h1&gt; heading 1 &lt;/h1&gt;
+                &lt;h2&gt; heading 2 &lt;/h2&gt;
+                &lt;h3&gt; heading 3 &lt;/h3&gt;
+                &lt;h4&gt; heading 4 &lt;/h4&gt;
+                &lt;h5&gt; heading 5 &lt;/h5&gt;
+                &lt;h6&gt; heading 6 &lt;/h6&gt;
+              </code></pre>
+            </p>
+            <p>
+              2. Paragraph tags
+              <pre><code>
+                &lt;p&gt; This is a paragraph.&lt;/p&gt;
+              </code></pre>
+            </p>
+          </section>
+             <section>
+            <h4>3. Anchor Tags </h4>
+            <p>
+              HTML anchor tags link an image/text to another website/ document. <br>
+              <pre><code data-trim>
+                                          &lt;a href=&quot;http://www.hackncs.com&quot;&gt; NCS &lt;/a&gt;
+              </code></pre>
+              Click on the text below to go to the link http://www.hackncs.com <br>
+              <a href="http://www.hackncs.com" target="_blank">NCS</a> 
+              <p>&bull;</p>
+             
+            </p>
+          </section>
+          <section data-transition="zoom">
+            
+              <h4>4. HTML Lists</h4>
+              
+            <pre><code data-noescape>
+          &lt;h1&gt; Lists &lt;/h1&gt;
+          &lt;p&gt;This is how you make an unordered list: &lt;/p&gt;
+          &lt;ul&gt;
+          &lt;li&gt;Add a "ul" element (it stands for unordered list)&lt;/li&gt;
+          &lt;li&gt;Add each item in its own "li" element&lt;/li&gt;
+          &lt;li&gt;They don't need to be in any particular order&lt;/li&gt
+          &lt;ul&gt;
+            </code></pre>
+                    <img src="assets/list.png" alt="List" style="height: 300px;">
+            
+          </section>
+          </section>
+          </section>
+          <section>
+            <h6>Knowing only HTML is not enough !</h6>
+
+
         
-        
+            <p>But, don’t be underwhelmed. Gaining fluency in HTML is a significant first step towards becoming a real web developer. </p>
+
+            <img src="assets/css.png" alt="Web" style="height: 500px;" >
+          </section>
+            
+
+            <!-- CSS --------------->
+             <section data-transition="zoom">
+              <h1 style="font-size: 300px;">CSS </h1>
+              <p>For crafting slightly prettier websites</p>
+            </section>
+           <section>
+
+          <section>
+            <h2>What is CSS ? </h2>
+            <div style="width:50%; float:left;">
+              <ul>
+                <li>It stands for <b>C</b>ascading <b>S</b>tyle <b>S</b>heets.</li>
+                <li>a style sheet language</li>
+                <li>tells the browser <strong>HOW</strong> your HTML should be displayed </li>
+              </ul>
+            </div>
+            <div style="width:50%; float:left;">
+              <img class="stretch" src="assets/css.jpg" alt="">
+            </div>
+          </section>
+          <section>
+            <h3>Basic CSS Syntax</h3>
+            <img class="stretch" src="https://internetingishard.com/html-and-css/hello-css/css-rule-terminology-1a7961.png" alt="">
+          </section>
+          <section>
+            <h3>Linking CSS to HTML <small>( the right way! )</small></h3>
+            <p>
+              Using the <strong>&lt;link&gt;</strong> tag. <br>All css rules are written in a seperate css file which can be linked to the HTML page.
+              <pre><code>
+                &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
+              </code></pre>
+              <code>.css</code> is the extension of CSS files.
+            </p>
+          </section>
+          <section>
+            <h4>Other ways of connecting CSS to HTML:</h4>
+            <p style="text-align:left;">
+              1. Inline: <br>
+              Using the html <strong>style</strong> attribute.
+              <pre><code>
+   &lt;p style=&quot;color:red&quot;&gt;Paragraph.&lt;/p&gt;
+              </code></pre>
+            </p>
+            <p style="text-align:left;">
+              2. Embedded: <br>
+              Using html <code>&lt;style&gt;&lt;/style&gt;</code> tags.
+              <pre><code>
+                &lt;style&gt;
+                  p {
+                    color: red;
+                  }
+                &lt;/style&gt;
+              </code></pre>
+            </p>
+            <em>However, these are not preferred.</em>
+          </section>
+
+        </section>
+
+        <!-- CSS Selectors  -->
+        <section>
+          <section>
+            <h2>CSS Selectors</h2>
+            <p>A CSS selector is the part of a CSS rule set that <strong>targets the content in your HTML</strong> that you want to style.</p>
+            <p>
+              Some basic CSS selectors are:
+              <ul>
+                <li>Type selectors</li>
+                <li>Class selectors</li>
+                <li>ID selectors</li>
+              </ul>
+            </p>
+          </section>
+          <section>
+            <h3>Selector: Type</h3>
+            <p>
+              <ul>
+                <li>targets elements by their element type.</li>
+                <li>will select all elements of a type</li>
+              </ul>
+            </p>
+            <pre><code>
+              // syntax
+              elementname {
+                property: value;
+                property: value;
+              }
+
+              //example
+              a {
+                background: yellow;
+              }
+            </code></pre>
+          </section>
+          <section>
+            <h3>Selector: Class</h3>
+            <p>
+              <ul>
+                <li>targets elements by element’s class attribute value</li>
+                <li>selects a particular group of elements  </li>
+              </ul>
+            </p>
+            <pre><code>
+              // syntax
+              .classname {
+                property: value;
+                property: value;
+              }
+
+              //example
+              .colleges {
+                background: black;
+                font-size:20px;
+              }
+            </code></pre>
+          </section>
+          <section>
+            <h3>Selector: ID</h3>
+            <p>
+              <ul>
+                <li>targets a element by its <code>id</code> attribute</li>
+                <li>selects only one unique element at a time</li>
+              </ul>
+            </p>
+            <pre><code>
+              // syntax
+              #idname {
+                property: value;
+                property: value;
+              }
+
+              // example
+              #jss {
+                background-color: red;
+                font-size:28px;
+              }
+            </code></pre>
+          </section>
+        </section>
+
+         <section>
+          <h3>Commonly used CSS properties:</h3>
+          <p>
+            width, height, color, background, background-color, background-image,
+            font-size, font-style, font-weight, text-align, text-decoration, list-style, border, border-color, margin, padding,
+          </p>
+
+        </section>
+        <section>
+          <h3>Units of Measurement</h3>
+          <p>There are currently 15 CSS UNITS supported by browsers and they can be split into two categories absolute units and relative units.</p>
+          <img src="https://cdn-images-1.medium.com/max/800/1*yt167LGyKRaONY3MegckOA.jpeg" style="height: 400px;">
+        </section>
+        <section>
+          <h3>CSS Box Model</h3>
+          <div style="width:50%; float:left;text-align:left;">
+            <small>The “CSS box model” is a set of rules that determine the dimensions of every element in a web page. It gives each box (both inline and block) four properties:</small> <hr>
+            <ul>
+              <li><small>Content – The text, image, or other media content in the element.</small></li>
+              <li><small>Padding – The space between the box’s content and its border.</small></li>
+              <li><small>Border – The line between the box’s padding and margin.</small></li>
+              <li><small>Margin – The space between the box and surrounding boxes.</small></li> <hr>
+            </ul>
+           <small>Together, this is everything a browser needs to render an element’s box. </small>
+            
+
+          </div>
+          <div style="width:50%; float:left;">
+            <img class="stretch" src="https://internetingishard.com/html-and-css/css-box-model/css-box-model-73a525.png" alt="Box Model" style="height: 500px;">
+
+          </div>
+
+        </section>
+
+        <section data-transition="concave">
+            <h3> Whats Next?</h3>
+            <p>
+              Build a small project of your own. Here are a few ideas.
+              <ul>
+                <li> <strong>Online Resume/ Personal Portfolio</strong> <br>
+                  Build a static webpage showcasing your skills and achievements.
+                </li>
+                <li> <strong>Replicate To Learn</strong> <br>
+                  Try recreating home pages of your favorite websites. (Facebook,Google,Quora etc)
+                </li>
+              </ul>
+            </p>
+            <hr>
+            <p><em>Happy Coding! :) </em></p>
+        </section>
+        <section data-transition="concave">
+          <h3>Modern Tools</h3>
+          <ul>
+            <li> <strong>Browsers</strong> <br>
+              Chrome, Firefox
+            </li>
+            <li> <strong>Developer Tools</strong> <br>
+              Chrome Inspector <br>
+              Firefox - Firebug
+            </li>
+            <li> <strong>Code Editors</strong> <br>
+              <a target="_blank" href="https://www.sublimetext.com/3">Sublime </a> - Windows, Max, Linux <br>
+              <a target="_blank" href="https://atom.io/">Atom </a> by GitHub for Windows, Mac <br>
+              <a target="_blank" href="https://notepad-plus-plus.org/download/v7.html">Notepad++ </a>- Runs in the MS Windows environment<br>
+            </li>
+          </ul>
+        </section>
+
+          <section data-transition="zoom">
+            <h2>Questions ?</h2>
+            <p>
+                Find us @ <br>
+                Lab 3 <br>
+                AB - I, Computer Center <br>
+                4:30 - 7:30 pm
+            </p>
+        </section>
+
         <!-- SILDES END----------------------------------------- -->
       </div>
     </div>
