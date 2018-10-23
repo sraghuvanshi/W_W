@@ -262,11 +262,233 @@
           </section>
           <section>
             <h6>Knowing only HTML is not enough !</h6>
+
+
+        
             <p>But, don’t be underwhelmed. Gaining fluency in HTML is a significant first step towards becoming a real web developer. </p>
 
             <img src="assets/css.png" alt="Web" style="height: 500px;" >
           </section>
             
+
+            <!-- CSS --------------->
+             <section data-transition="zoom">
+              <h1 style="font-size: 300px;">CSS </h1>
+              <p>For crafting slightly prettier websites</p>
+            </section>
+           <section>
+
+          <section>
+            <h2>What is CSS ? </h2>
+            <div style="width:50%; float:left;">
+              <ul>
+                <li>It stands for <b>C</b>ascading <b>S</b>tyle <b>S</b>heets.</li>
+                <li>a style sheet language</li>
+                <li>tells the browser <strong>HOW</strong> your HTML should be displayed </li>
+              </ul>
+            </div>
+            <div style="width:50%; float:left;">
+              <img class="stretch" src="assets/css.jpg" alt="">
+            </div>
+          </section>
+          <section>
+            <h3>Basic CSS Syntax</h3>
+            <img class="stretch" src="https://internetingishard.com/html-and-css/hello-css/css-rule-terminology-1a7961.png" alt="">
+          </section>
+          <section>
+            <h3>Linking CSS to HTML <small>( the right way! )</small></h3>
+            <p>
+              Using the <strong>&lt;link&gt;</strong> tag. <br>All css rules are written in a seperate css file which can be linked to the HTML page.
+              <pre><code>
+                &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
+              </code></pre>
+              <code>.css</code> is the extension of CSS files.
+            </p>
+          </section>
+          <section>
+            <h4>Other ways of connecting CSS to HTML:</h4>
+            <p style="text-align:left;">
+              1. Inline: <br>
+              Using the html <strong>style</strong> attribute.
+              <pre><code>
+   &lt;p style=&quot;color:red&quot;&gt;Paragraph.&lt;/p&gt;
+              </code></pre>
+            </p>
+            <p style="text-align:left;">
+              2. Embedded: <br>
+              Using html <code>&lt;style&gt;&lt;/style&gt;</code> tags.
+              <pre><code>
+                &lt;style&gt;
+                  p {
+                    color: red;
+                  }
+                &lt;/style&gt;
+              </code></pre>
+            </p>
+            <em>However, these are not preferred.</em>
+          </section>
+
+        </section>
+
+        <!-- CSS Selectors  -->
+        <section>
+          <section>
+            <h2>CSS Selectors</h2>
+            <p>A CSS selector is the part of a CSS rule set that <strong>targets the content in your HTML</strong> that you want to style.</p>
+            <p>
+              Some basic CSS selectors are:
+              <ul>
+                <li>Type selectors</li>
+                <li>Class selectors</li>
+                <li>ID selectors</li>
+              </ul>
+            </p>
+          </section>
+          <section>
+            <h3>Selector: Type</h3>
+            <p>
+              <ul>
+                <li>targets elements by their element type.</li>
+                <li>will select all elements of a type</li>
+              </ul>
+            </p>
+            <pre><code>
+              // syntax
+              elementname {
+                property: value;
+                property: value;
+              }
+
+              //example
+              a {
+                background: yellow;
+              }
+            </code></pre>
+          </section>
+          <section>
+            <h3>Selector: Class</h3>
+            <p>
+              <ul>
+                <li>targets elements by element’s class attribute value</li>
+                <li>selects a particular group of elements  </li>
+              </ul>
+            </p>
+            <pre><code>
+              // syntax
+              .classname {
+                property: value;
+                property: value;
+              }
+
+              //example
+              .colleges {
+                background: black;
+                font-size:20px;
+              }
+            </code></pre>
+          </section>
+          <section>
+            <h3>Selector: ID</h3>
+            <p>
+              <ul>
+                <li>targets a element by its <code>id</code> attribute</li>
+                <li>selects only one unique element at a time</li>
+              </ul>
+            </p>
+            <pre><code>
+              // syntax
+              #idname {
+                property: value;
+                property: value;
+              }
+
+              // example
+              #jss {
+                background-color: red;
+                font-size:28px;
+              }
+            </code></pre>
+          </section>
+        </section>
+
+         <section>
+          <h3>Commonly used CSS properties:</h3>
+          <p>
+            width, height, color, background, background-color, background-image,
+            font-size, font-style, font-weight, text-align, text-decoration, list-style, border, border-color, margin, padding,
+          </p>
+
+        </section>
+        <section>
+          <h3>Units of Measurement</h3>
+          <p>There are currently 15 CSS UNITS supported by browsers and they can be split into two categories absolute units and relative units.</p>
+          <img src="https://cdn-images-1.medium.com/max/800/1*yt167LGyKRaONY3MegckOA.jpeg" style="height: 400px;">
+        </section>
+        <section>
+          <h3>CSS Box Model</h3>
+          <div style="width:50%; float:left;text-align:left;">
+            <small>The “CSS box model” is a set of rules that determine the dimensions of every element in a web page. It gives each box (both inline and block) four properties:</small> <hr>
+            <ul>
+              <li><small>Content – The text, image, or other media content in the element.</small></li>
+              <li><small>Padding – The space between the box’s content and its border.</small></li>
+              <li><small>Border – The line between the box’s padding and margin.</small></li>
+              <li><small>Margin – The space between the box and surrounding boxes.</small></li> <hr>
+            </ul>
+           <small>Together, this is everything a browser needs to render an element’s box. </small>
+            
+
+          </div>
+          <div style="width:50%; float:left;">
+            <img class="stretch" src="https://internetingishard.com/html-and-css/css-box-model/css-box-model-73a525.png" alt="Box Model" style="height: 500px;">
+
+          </div>
+
+        </section>
+
+        <section data-transition="concave">
+            <h3> Whats Next?</h3>
+            <p>
+              Build a small project of your own. Here are a few ideas.
+              <ul>
+                <li> <strong>Online Resume/ Personal Portfolio</strong> <br>
+                  Build a static webpage showcasing your skills and achievements.
+                </li>
+                <li> <strong>Replicate To Learn</strong> <br>
+                  Try recreating home pages of your favorite websites. (Facebook,Google,Quora etc)
+                </li>
+              </ul>
+            </p>
+            <hr>
+            <p><em>Happy Coding! :) </em></p>
+        </section>
+        <section data-transition="concave">
+          <h3>Modern Tools</h3>
+          <ul>
+            <li> <strong>Browsers</strong> <br>
+              Chrome, Firefox
+            </li>
+            <li> <strong>Developer Tools</strong> <br>
+              Chrome Inspector <br>
+              Firefox - Firebug
+            </li>
+            <li> <strong>Code Editors</strong> <br>
+              <a target="_blank" href="https://www.sublimetext.com/3">Sublime </a> - Windows, Max, Linux <br>
+              <a target="_blank" href="https://atom.io/">Atom </a> by GitHub for Windows, Mac <br>
+              <a target="_blank" href="https://notepad-plus-plus.org/download/v7.html">Notepad++ </a>- Runs in the MS Windows environment<br>
+            </li>
+          </ul>
+        </section>
+
+          <section data-transition="zoom">
+            <h2>Questions ?</h2>
+            <p>
+                Find us @ <br>
+                Lab 3 <br>
+                AB - I, Computer Center <br>
+                4:30 - 7:30 pm
+            </p>
+        </section>
+
         <!-- SILDES END----------------------------------------- -->
       </div>
     </div>
