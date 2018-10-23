@@ -260,6 +260,120 @@
           </section>
           </section>
           </section>
+
+          <section>
+            <section>
+              <h4>Tables</h4>
+              <p>In HTML, you create tables using the <i style="color: #B5DFE7">&lt;table&gt;</i> element, in conjunction with the <i style="color: #B5DFE7">&lt;tr&gt;</i> and <i style="color: #B5DFE7">&lt;td&gt;</i> elements.</p>
+
+<p>Each set of <i style="color: #B5DFE7">&lt;tr&gt;</i> tags (opening and closing tags) represents a row within the table that they're nested in. And each set of <i style="color: #B5DFE7">&lt;td&gt;</i> tags represents a table data cell within the row that they're nested in.</p>
+<p>You can also add table headers using the <i style="color: #B5DFE7">&lt;th&gt;</i> element. </p>
+            </section>
+            <section>
+              <h4>Basic HTML Table</h4>
+                <pre><code>
+                  <table>
+                    <tr>
+                      <th>Name</th>
+                      <th>Favorite Color</th>
+                    </tr>
+                    <tr>
+                     <td>Bob</td>
+                     <td>Yellow</td>
+                    </tr>
+                    <tr>
+                     <td>Michelle</td>
+                     <td>Purple</td>
+                    </tr>
+                    </table>
+                </code></pre>
+            </section>
+            <section>
+              <h4>How it should look like</h4>
+              <img src="assets/table.png">
+            </section>
+
+          </section>
+
+
+          <section>
+          <section>
+            <h4>HTML Forms</h4>
+            <p>Forms on a page allow us to collect data given by the users. </p>
+            <img class="stretch" src="http://designbump.com/wp-content/uploads/2013/10/contact_form_inspiration_025.png?3ec7fb" alt="contact form">
+          </section>
+
+          <section>
+            <p>
+              <h5>Basic elements used in a html form:</h5>
+              <ul>
+                <li>Some kind of input ( usually the <strong>&lt;input&gt;</strong> tag ) </li>
+                <li>A submit button </li>
+              </ul> <br>
+
+            </p>
+            <div style="width:50%; float:left;">
+              <pre>
+                <code>
+    &lt;form&gt;
+      &lt;input type=&quot;text&quot;&gt;
+      &lt;button type=&quot;submit&quot;&gt;&lt;/button&gt;
+    &lt;/form&gt;
+                </code>
+              </pre>
+            </div>
+            <div style="width:50%; float:left;">
+                <small>Preview of the code: </small>
+                <form>
+                  <input type="text" placeholder="Enter your Name."> <br>
+                  <input type="submit">
+                </form>
+            </div>
+          </section>
+
+          <section>
+            <h3>Activity!</h3>
+            <small>Let's try to code the following FORM from scratch.</small>
+            <br>
+            <img src="assets/forms.png"  alt="form" >
+          </section>
+
+          <section>
+            <p>Code for the above form:</p>
+            <pre><code>
+              &lt;form&gt;
+                &lt;fieldset&gt;
+                  &lt;legend&gt; Registration Information &lt;/legend&gt;
+
+                  Username:
+                  &lt;input type=&quot;text&quot; placeholder=&quot;Username&quot;&gt;
+
+                  Password:
+                  &lt;input type=&quot;password&quot; placeholder=&quot;Password&quot;&gt;
+
+                  Your full name:
+                  &lt;input type=&quot;text&quot; placeholder=&quot;Full Name&quot;&gt;
+
+                  Sex:
+                  &lt;input type=&quot;radio&quot; name=&quot;gender&quot;&gt; Male
+                  &lt;input type=&quot;radio&quot; name=&quot;gender&quot;&gt; Female
+
+                  Languages you know:
+                  &lt;input type=&quot;checkbox&quot;&gt; C
+                  &lt;input type=&quot;checkbox&quot;&gt; C++
+                  &lt;input type=&quot;checkbox&quot;&gt; Java
+                  &lt;input type=&quot;checkbox&quot;&gt; python
+
+                  &lt;input type=&quot;submit&quot;&gt;
+                &lt;/fieldset&gt;
+              &lt;/form&gt;
+            </code></pre>
+          </section>
+
+        </section>
+        <!-- other tags -->
+        <section>
+
           <section>
             <h6>Knowing only HTML is not enough !</h6>
             <p>But, don’t be overwhelmed. Gaining fluency in HTML is a significant first step towards becoming a real web developer. </p>
