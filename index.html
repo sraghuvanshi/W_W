@@ -130,6 +130,29 @@
           </code></pre>
         </section>
         <section>
+          <h2>
+            Tag Vs Attribute
+          </h2>
+          <table>
+                    <thead>
+                    <tr style="border: 1px solid #fff;">
+                      <th style="border-right: 1px solid #fff; text-align: center;">Tag</th>
+                      <th>Attribute</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr style="border: 1px solid #fff;">
+                     <td style="border-right: 1px solid #fff;">Attributes provide additional information about an element</td>
+                     <td>An HTML element usually consists of a start tag and end tag, with the content inserted in between</td>
+                    </tr>
+                     <tr style="border: 1px solid #fff;">
+                     <td style="border-right: 1px solid #fff;">Attributes usually come in name/value pairs like: name="value"</td>
+                     <td><pre><code><tagname> Content goes here... </tagname></code></pre></td>
+                    </tr>
+                  </tbody>
+                    </table>
+        </section>
+        <section>
             <h2>HTML Elements & Tags </h2>
             <p>An HTML element usually consists of a <strong>opening</strong> and a <strong>closing</strong> tag. Lets look at the following example: </p>
             <img class="stretch" src="assets/element.jpg" alt="html element">
@@ -140,7 +163,7 @@
             <p>
               <ul>
                 <li>HTML documents start with a <em>document type</em> declaration: <strong>&lt;!DOCTYPE html&gt;</strong></li>
-                <li>all documents must begin with a opening  <strong>&lt;html&gt;</strong> tag and end with a closing <strong>&lt;/html&gt;</strong> tag.</li>
+                <li>All documents must begin with a opening  <strong>&lt;html&gt;</strong> tag and end with a closing <strong>&lt;/html&gt;</strong> tag.</li>
               </ul>
 
               <pre><code data-noescape>
@@ -273,10 +296,13 @@
               <h4>Basic HTML Table</h4>
                 <pre><code>
                   <table>
+                    <thead>
                     <tr>
                       <th>Name</th>
                       <th>Favorite Color</th>
                     </tr>
+                  </thead>
+                  <tbody>
                     <tr>
                      <td>Bob</td>
                      <td>Yellow</td>
@@ -285,12 +311,31 @@
                      <td>Michelle</td>
                      <td>Purple</td>
                     </tr>
+                  </tbody>
                     </table>
                 </code></pre>
             </section>
             <section>
               <h4>How it should look like</h4>
-              <img src="assets/table.png">
+              <table>
+                    <thead>
+                    <tr style="border: 1px solid #fff;">
+                      <th style="border-right: 1px solid #fff;">Name</th>
+                      <th>Favorite Color</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr style="border: 1px solid #fff;">
+                     <td style="border-right: 1px solid #fff;">Bob</td>
+                     <td>Yellow</td>
+                    </tr>
+                    <tr style="border: 1px solid #fff;">
+                     <td style="border-right: 1px solid #fff;">Michelle</td>
+                     <td>Purple</td>
+                    </tr>
+                  </tbody>
+                    </table>
+                
             </section>
 
           </section>
@@ -313,14 +358,12 @@
 
             </p>
             <div style="width:50%; float:left;">
-              <pre>
-                <code>
+              <pre><code>
     &lt;form&gt;
-      &lt;input type=&quot;text&quot;&gt;
-      &lt;button type=&quot;submit&quot;&gt;&lt;/button&gt;
+     &lt;input type=&quot;text&quot;&gt;
+     &lt;button type=&quot;submit&quot;&gt;&lt;/button&gt;
     &lt;/form&gt;
-                </code>
-              </pre>
+                </code></pre>
             </div>
             <div style="width:50%; float:left;">
                 <small>Preview of the code: </small>
@@ -335,7 +378,7 @@
             <h3>Activity!</h3>
             <small>Let's try to code the following FORM from scratch.</small>
             <br>
-            <img src="assets/forms.png"  alt="form" >
+            <iframe src="form.html" width="80%" height="350px"></iframe>
           </section>
 
           <section>
@@ -380,6 +423,8 @@
 
             <img src="assets/css.png" alt="Web" style="height: 500px;" >
           </section>
+
+            </section>
 
             <!-- CSS --------------->
              <section data-transition="zoom">
@@ -520,7 +565,7 @@
             </code></pre>
             </section>
             <section>
-              <h2>Pseudo-Classes for Links</h2>
+              <h2>Some Pseudo-Classes Example</h2>
               <ul>
                 <li>: link – A link the user has never visited.</li>
                 <li>: visited – A link the user has visited before.</li>
@@ -615,13 +660,24 @@
         </section>
 
           <section data-transition="zoom">
-            <h2>Questions ?</h2>
-            <p>
-                Find us @ <br>
-                Lab 3 <br>
-                AB - I, Computer Center <br>
-                4:30 - 7:30 pm
-            </p>
+            
+    <h1>
+    That's All Folks</h1>
+  <p>For Any Queries</p>
+  <a href="http://www.facebook.com/nibblecomputersociety" target="_blank">
+  <img src="assets/facebook.svg" width="64px">
+</a>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://www.github.com/ncs-jss" target="_blank">
+  <img src="assets/github-icon.svg" height="64px">
+</a>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://www.hackncs.com" target="_blank">
+  <img src="assets/ncsncs_logo.png" height="64px">
+</a>
+<h1>Thank You</h1>
+<p>Nibble Computer Society</p>
+ 
         </section>
         <!-- SILDES END----------------------------------------- -->
       </div>
