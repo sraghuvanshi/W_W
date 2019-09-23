@@ -16,10 +16,6 @@
     <div class="reveal">
       <div class="slides">
         <!-- BEGINNNG SLIDES ================================== -->
-            <section>
-              <h3>html & css is hard</h3>
-              <p>(But it doesn’t have to be)</p>
-            </section>
              <section data-transition="zoom">
             <h1>Welcome To HTML/CSS <small>Beginner Workshop</small></h1>
             <br>
@@ -43,10 +39,10 @@
           <section>
             <p>First things first!</p>
             <h4><a>HTML is <strong>NOT</strong> a programming language.</a></h4>
-            <p>its a markup language.</p>
+            <p>It is a Markup Language.</p>
            </section>
           <section>
-            <h1>MarkUp  VS  Programming </h1    >
+            <h2>MarkUp  VS  Programming </h2>
             <table>
               <thead class="table">
                 <tr>
@@ -80,14 +76,14 @@
               <table>
                 <thead class="table">
                   <tr>
-                    <th>First Website</th>
-                    <th>Modern Day Website</th>
+                    <th style="text-align: center">First Website</th>
+                    <th style="text-align: center">Modern Day Website</th>
                   </tr>
                 </thead>
                 <tbody class="table">
                   <tr>
-                    <td> <img src="assets/first.png" alt="First Website"> </td>
-                    <td> <img src="assets/modernn.png" alt="Modern Day Website"> </td>
+                    <td> <img src="assets/first.png" alt="First Website" style="height: 300px; width: 1320px;"> </td>
+                    <td> <img src="assets/modernn.png" alt="Modern Day Website" style="height: 300px; width: 1320px;"> </td>
                   </tr>
                 </tbody>
               </table>
@@ -96,9 +92,9 @@
         <section data-transition="concave">
           <h2>MUST KNOW WEB TERMINOLOGIES <br></h2>
           <ul>
-            <li><strong>Front End</strong><br>
+            <li><a href=""><strong>Front End</strong></a><br>
               The outwardly visible elements of a website or application</li>
-              <li><strong>Back-End — Behind The Scenes</strong><br>
+              <li><a href=""><strong>Back-End</strong></a><br>
               The inner workings and functionality of a website or application.</li>
           </ul>
         </section>
@@ -111,7 +107,7 @@
 
         <section data-transition="concave">
           Basic Folder Structure
-          <pre><code>
+          <pre><code style="overflow: hidden; padding-bottom: 15px;">
             |-- css
             |   |-- style.css
             |
@@ -129,35 +125,8 @@
             |-- index.html
           </code></pre>
         </section>
+
         <section>
-          <h2>
-            Tag Vs Attribute
-          </h2>
-          <table>
-                    <thead>
-                    <tr style="border: 1px solid #fff;">
-                      <th style="border-right: 1px solid #fff; text-align: center;">Tag</th>
-                      <th>Attribute</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr style="border: 1px solid #fff;">
-                     <td style="border-right: 1px solid #fff;">Attributes provide additional information about an element</td>
-                     <td>An HTML element usually consists of a start tag and end tag, with the content inserted in between</td>
-                    </tr>
-                     <tr style="border: 1px solid #fff;">
-                     <td style="border-right: 1px solid #fff;">Attributes usually come in name/value pairs like: name="value"</td>
-                     <td><pre><code><tagname> Content goes here... </tagname></code></pre></td>
-                    </tr>
-                  </tbody>
-                    </table>
-        </section>
-        <section>
-            <h2>HTML Elements & Tags </h2>
-            <p>An HTML element usually consists of a <strong>opening</strong> and a <strong>closing</strong> tag. Lets look at the following example: </p>
-            <img class="stretch" src="assets/element.jpg" alt="html element">
-        </section>
-         <section>
           <section>
             <h3> html basics </h3>
             <p>
@@ -226,13 +195,40 @@
                 <p>This is how it should look in browser.</p>
                 <img class="stretch" src="assets/smple.png" alt="">
               </section>
-       </section
+            </section>
+
+            <section>
+              <h2>HTML Elements & Tags </h2>
+              <p>An HTML element usually consists of a <strong>opening</strong> and a <strong>closing</strong> tag. Lets look at the following example: </p>
+              <img class="stretch" src="assets/element.jpg" alt="html element">
+          </section>
 
         <section>
+          <h2>
+            Tag Vs Attribute
+          </h2>
+          <table>
+                    <thead>
+                    <tr style="border: 1px solid #fff;">
+                      <th style="border-right: 1px solid #fff; text-align: center;">Tag</th>
+                      <th>Attribute</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr style="border: 1px solid #fff;">
+                     <td style="border-right: 1px solid #fff;">Attributes provide additional information about an element</td>
+                     <td>An HTML element usually consists of a start tag and end tag, with the content inserted in between</td>
+                    </tr>
+                     <tr style="border: 1px solid #fff;">
+                     <td style="border-right: 1px solid #fff;">Attributes usually come in name/value pairs like: name="value"</td>
+                     <td><pre><code><tagname> Content goes here... </tagname></code></pre></td>
+                    </tr>
+                  </tbody>
+                    </table>
+                  </section>
+
+      
           <section>
-
-
-
              <section data-transition="concave">
           <h5>Some other commonly used HTML tags </h5>
             <p>1. Heading tags <br>
@@ -267,8 +263,9 @@
           </section>
           <section data-transition="zoom">
 
-              <h4>4. HTML Lists</h4>
+              <h4 style="margin-top: -30px;">4. HTML Lists</h4>
 
+            <h6>1. Unordered Lists</h6>
             <pre><code data-noescape>
           &lt;h1&gt; Lists &lt;/h1&gt;
           &lt;p&gt;This is how you make an unordered list: &lt;/p&gt;
@@ -278,9 +275,19 @@
           &lt;li&gt;They don't need to be in any particular order&lt;/li&gt
           &lt;ul&gt;
             </code></pre>
-                    <img src="assets/list.png" alt="List" style="height: 300px;">
 
-          </section>
+            <h6>2. Ordered Lists</h6>
+            <pre><code data-noescape>
+          &lt;h1&gt; Lists &lt;/h1&gt;
+          &lt;p&gt;This is how you make an ordered list: &lt;/p&gt;
+          &lt;ol&gt;
+          &lt;li&gt;Add a "ol" element (it stands for ordered list)&lt;/li&gt;
+          &lt;li&gt;Add each item in its own "li" element&lt;/li&gt;
+          &lt;li&gt;They need to be in a particular order&lt;/li&gt
+          &lt;ol&gt;
+            </code></pre>
+                    <!-- <img src="assets/list.png" alt="List" style="height: 230px;"> -->
+
           </section>
           </section>
 
@@ -416,6 +423,14 @@
         </section>
         <!-- other tags -->
         <!-- <section> -->
+          <section>
+            <h4>&#60; Div &#62;</h4>
+            <ul>
+              <li>The &#60;div&#62; tag defines a division or a section in an HTML document.</li>
+              <li>The &#60;div&#62; element is often used as a container for other HTML elements to style them with CSS or to perform certain tasks with JavaScript.</li>
+              <li>The &#60;div&#62; tag is not an element in itself, it is just used to divide the HTML content.</li>
+            </ul>
+          </section>
 
           <section>
             <h6>Knowing only HTML is not enough !</h6>
