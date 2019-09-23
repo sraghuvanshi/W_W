@@ -13,6 +13,8 @@
     <![endif]-->
   </head>
   <body>
+    <!-- Particle Js  -->
+    <!-- particles.js container --> <div id="particles-js"></div> <!-- stats - count particles --> <div class="count-particles"> <span class="js-count-particles">--</span> particles </div> <!-- particles.js lib - https://github.com/VincentGarreau/particles.js --> <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib --> <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
     <div class="reveal">
       <div class="slides">
         <!-- BEGINNNG SLIDES ================================== -->
@@ -107,7 +109,7 @@
 
         <section data-transition="concave">
           Basic Folder Structure
-          <pre><code style="overflow: hidden; padding-bottom: 15px;">
+          <pre><code style="overflow: hidden;">
             |-- css
             |   |-- style.css
             |
@@ -454,7 +456,7 @@
             <img class="stretch" src="https://internetingishard.com/html-and-css/hello-css/css-rule-terminology-1a7961.png" alt="">
           </section>
           <section>
-            <h3>Linking CSS to HTML <small>( the right way! )</small></h3>
+            <h3>Linking CSS to HTML <br> <small style="margin-top:16px;">( the right way! )</small></h3>
             <p>
               Using the <strong>&lt;link&gt;</strong> tag. <br>All css rules are written in a seperate css file which can be linked to the HTML page.
               <pre><code>
@@ -700,6 +702,7 @@
     <!-- reveal.js JS Files -->
     <script src="lib/js/head.min.js"></script>
     <script src="js/reveal.js"></script>
+    <script src="js/particle.js"></script>
     <script>
     // Required, even if empty.
     Reveal.initialize({
