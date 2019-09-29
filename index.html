@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/theme/black.css">
     <!-- Code syntax highlight CSS file -->
     <link rel="stylesheet" href="lib/css/zenburn.css">
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
     <!--[if lt IE 9]>
     <script src="lib/js/html5shiv.js"></script>
     <![endif]-->
@@ -38,13 +39,21 @@
           <p>It stands for <strong>Hyper Text Markup Language</strong></p>
         </section>
         <section data-transition="zoom">
+
           <section>
-            <p>First things first!</p>
             <h4><a>HTML is <strong>NOT</strong> a programming language.</a></h4>
             <p>It is a Markup Language.</p>
            </section>
+
           <section>
-            <h2>MarkUp  VS  Programming </h2>
+            <h4>Hyper Text</h4>
+            <p>Hypertext is text displayed on a computer display with references to other text that the reader can immediately access.</p>
+            <h4>MarkUp Language</h4>
+            <p>Markup languages are designed for the processing, definition and presentation of text. </p>
+           </section>
+
+          <section>
+            <h3>MarkUp  VS  Programming </h3>
             <table>
               <thead class="table">
                 <tr>
@@ -54,12 +63,20 @@
               </thead>
               <tbody class="table">
                 <tr>
-                  <td class="fragment" data-fragment-index="1">Used to control the <em>presentation</em> and <em>structure</em> of the content.</td>
-                  <td class="fragment" data-fragment-index="2">Used to create <em>instructions</em> for machine to accomplish tasks.</td>
+                  <td class="" data-fragment-index="1">Used to control the <em>presentation</em> and <em>structure</em> of the content.</td>
+                  <td class="" data-fragment-index="2">Used to create <em>instructions</em> for machine to accomplish tasks.</td>
                 </tr>
                 <tr>
-                  <td class="fragment" data-fragment-index="3">e.g. HTML, CSS </td>
-                  <td class="fragment" data-fragment-index="3">e.g. Java, C, C++, python</td>
+                    <td class="" data-fragment-index="3">Interpreted by the browser</td>
+                    <td class="" data-fragment-index="3">Compiled be a compiler or interpreted by an intrepreter</td>
+                </tr>
+                <tr>
+                  <td class="" data-fragment-index="3">Used to present Information</td>
+                  <td class="" data-fragment-index="3">Used to give instructions to a computer to perform a particular task</td>
+                </tr>
+                <tr>
+                  <td class="" data-fragment-index="3">e.g. HTML, XML, XHTML </td>
+                  <td class="" data-fragment-index="3">e.g. Java, C, C++, python</td>
                 </tr>
               </tbody>
             </table>
@@ -91,15 +108,29 @@
               </table>
             </section>
         </section>
-        <section data-transition="concave">
-          <h2>MUST KNOW WEB TERMINOLOGIES <br></h2>
-          <ul>
-            <li><a href=""><strong>Front End</strong></a><br>
-              The outwardly visible elements of a website or application</li>
-              <li><a href=""><strong>Back-End</strong></a><br>
-              The inner workings and functionality of a website or application.</li>
-          </ul>
+
+        <section>
+          <section data-transition="concave">
+            <h2>MUST KNOW WEB TERMINOLOGIES <br></h2>
+            <ul>
+              <li><a href=""><strong>Front End</strong></a><br>
+                The outwardly visible elements of a website or application</li>
+                <li><a href=""><strong>Back-End</strong></a><br>
+                The inner workings and functionality of a website or application.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h5>Pictorial Representation of flow of a website</h5>
+            <img src="./assets/gif/fvsb.webp" alt="" style="height: 500px">
+          </section>
+
+          <section>
+            <h5>Frontend and Backend Technologies</h5>
+            <img src="./assets/gif/Frontend-Backend.jpg" alt="" style="height: 500px">
+          </section>
         </section>
+
         <section >
           <h3>SETUP</h3>
           <p>For this workshop, a decent <strong>text editor</strong> and <strong>web browser</strong>  is all you need. </p>
@@ -212,8 +243,8 @@
           <table>
                     <thead>
                     <tr style="border: 1px solid #fff;">
-                      <th style="border-right: 1px solid #fff; text-align: center;">Tag</th>
-                      <th>Attribute</th>
+                      <th style="border-right: 1px solid #fff; text-align: center;">Attribute</th>
+                      <th>Tag</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -232,7 +263,7 @@
       
           <section>
              <section data-transition="concave">
-          <h5>Some other commonly used HTML tags </h5>
+          <h4>commonly used HTML tags</h4>
             <p>1. Heading tags <br>
               <pre><code>
                 &lt;h1&gt; heading 1 &lt;/h1&gt;
@@ -251,46 +282,53 @@
             </p>
           </section>
              <section>
-            <h4>3. Anchor Tags </h4>
             <p>
+              <h5>3. Anchor Tag</h5> <br>
               HTML anchor tags link an image/text to another website/ document. <br>
               <pre><code data-trim>
                                           &lt;a href=&quot;http://www.hackncs.com&quot;&gt; NCS &lt;/a&gt;
               </code></pre>
               Click on the text below to go to the link http://www.hackncs.com <br>
               <a href="http://www.hackncs.com" target="_blank">NCS</a>
-              <p>&bull;</p>
+              <!-- <p>&bull;</p> -->
 
             </p>
           </section>
-          <section data-transition="zoom">
-
-              <h4 style="margin-top: -30px;">4. HTML Lists</h4>
-
-            <h6>1. Unordered Lists</h6>
-            <pre><code data-noescape>
-          &lt;h1&gt; Lists &lt;/h1&gt;
-          &lt;p&gt;This is how you make an unordered list: &lt;/p&gt;
-          &lt;ul&gt;
-          &lt;li&gt;Add a "ul" element (it stands for unordered list)&lt;/li&gt;
-          &lt;li&gt;Add each item in its own "li" element&lt;/li&gt;
-          &lt;li&gt;They don't need to be in any particular order&lt;/li&gt
-          &lt;ul&gt;
-            </code></pre>
-
-            <h6>2. Ordered Lists</h6>
-            <pre><code data-noescape>
-          &lt;h1&gt; Lists &lt;/h1&gt;
-          &lt;p&gt;This is how you make an ordered list: &lt;/p&gt;
-          &lt;ol&gt;
-          &lt;li&gt;Add a "ol" element (it stands for ordered list)&lt;/li&gt;
-          &lt;li&gt;Add each item in its own "li" element&lt;/li&gt;
-          &lt;li&gt;They need to be in a particular order&lt;/li&gt
-          &lt;ol&gt;
-            </code></pre>
-                    <!-- <img src="assets/list.png" alt="List" style="height: 230px;"> -->
-
           </section>
+
+          <section>
+              <section data-transition="zoom">
+
+                  <h4 style="margin-top: -30px;">HTML Lists</h4>
+    
+                <h6>1. Unordered Lists</h6>
+                <pre><code data-noescape>
+              &lt;h1&gt; Unordered Lists &lt;/h1&gt;
+              &lt;p&gt;This is how you make an unordered list: &lt;/p&gt;
+              &lt;ul&gt;
+              &lt;li&gt;Add a "ul" element (it stands for unordered list)&lt;/li&gt;
+              &lt;li&gt;Add each item in its own "li" element&lt;/li&gt;
+              &lt;li&gt;They don't need to be in any particular order&lt;/li&gt
+              &lt;ul&gt;
+                </code></pre>
+    
+                <h6>2. Ordered Lists</h6>
+                <pre><code data-noescape>
+              &lt;h1&gt; Ordered Lists &lt;/h1&gt;
+              &lt;p&gt;This is how you make an ordered list: &lt;/p&gt;
+              &lt;ol&gt;
+              &lt;li&gt;Add a "ol" element (it stands for ordered list)&lt;/li&gt;
+              &lt;li&gt;Add each item in its own "li" element&lt;/li&gt;
+              &lt;li&gt;They need to be in a particular order&lt;/li&gt
+              &lt;ol&gt;
+                </code></pre>
+    
+              </section>
+
+              <section>
+                <h4 style="font-size: 3rem;">Result:</h4>
+                <img src="assets/list.png" alt="List" style="">
+              </section>
           </section>
 
           <section>
@@ -640,6 +678,109 @@
 
           </div>
 
+        </section>
+
+        <section data-transition="concave">
+          <h3>Display Property</h3>
+          <p>There were mainly five display modes:</p>
+          <ul>
+            <li><small>Inline: Displays an element as an inline element. Any height and width properties will have no effect.</small></li>
+            <li><small>Block: Displays an element as a block element. It starts on a new line, and takes up the whole width</small></li>
+            <li><small>Inline-block: Displays an element as an inline-level block container. The element itself is formatted as an inline element, but you can apply height and width values</small></li>
+            <li><small>flex: Displays an element as a block-level flex container</small></li>
+            <li><small>grid: Displays an element as a block-level grid container</small></li>
+          </ul>
+        </section>
+
+        <section data-transition="concave">
+          <section>
+            <h3>CSS Grid</h3>
+          </section>
+          <section>
+              <h2>
+                  Properties for the parent 
+                </h2>
+              <table style="font-size: 40px;">
+                  <tbody>
+                    <tr style="border: 1px solid #fff;">
+                     <td style="border-right: 1px solid #fff;width: 250px">display</td>
+                     <td>Defines a grid container..</td>
+                    </tr>
+                     <tr style="border: 1px solid #fff;">
+                     <td style="border-right: 1px solid #fff;">grid-template-rows</td>
+                     <td>Specifies the size(s) of the columns and rows.</td>
+                    </tr>
+                    <tr style="border: 1px solid #fff;">
+                      <td style="border-right: 1px solid #fff;">grid-template-areas</td>
+                      <td>Specifies the grid layout using named items	</td>
+                     </tr>
+                      <tr style="border: 1px solid #fff;">
+                      <td style="border-right: 1px solid #fff;">grid-auto-rows</td>
+                      <td>Specifies the auto size of the rows, and sets the grid-template-columns property</td>
+                     </tr>
+                     
+                  </tbody>
+          </table>
+          </section>
+          <section>
+            <h2>CSS Grid In Action</h2>
+            <img src="https://cdn.mos.cms.futurecdn.net/7vpUPMSbPfhxiUNYj5XnE6.jpg" alt="">
+          </section>
+        </section>
+
+        <section data-transition="concave">
+          <section>
+            <h3>Flexbox</h3>
+          </section>
+
+          <section>
+                <h2>
+                  Properties for the parent 
+                </h2>
+                <table style="font-size: 40px;">
+                        <tbody>
+                          <tr style="border: 1px solid #fff;">
+                           <td style="border-right: 1px solid #fff;width: 250px">display</td>
+                           <td>Defines a flex container-flex formatting context.</td>
+                          </tr>
+                           <tr style="border: 1px solid #fff;">
+                           <td style="border-right: 1px solid #fff;">flex-direction</td>
+                           <td>Defines the main axis inside the container.</td>
+                          </tr>
+                          <tr style="border: 1px solid #fff;">
+                            <td style="border-right: 1px solid #fff;">flex-wrap</td>
+                            <td>Allows flex items to wrap onto more than one line</td>
+                           </tr>
+                            <tr style="border: 1px solid #fff;">
+                            <td style="border-right: 1px solid #fff;">flex-flow</td>
+                            <td>Shorthand for flex-direction + flex-wrap</td>
+                           </tr>
+                           
+                        </tbody>
+                </table>
+                <h5 style="padding-top:20px; text-align:left;">Table continues....</h5>
+              </section>
+              <section>
+                <table>
+                  <tbody>
+                       <tr style="border: 1px solid #fff;">
+                          <td style="border-right: 1px solid #fff;width: 250px;">justify-content</td>
+                          <td>Align items along the main axis</td>
+                         </tr>
+                            <tr style="border: 1px solid #fff;">
+                            <td style="border-right: 1px solid #fff;">align-content</td>
+                            <td>Align items along the cross axis on a single line</td>
+                            </tr>
+                            <tr style="border: 1px solid #fff;">
+                                <td style="border-right: 1px solid #fff;">align-items</td>
+                                <td>Align multiple lines of items on the cross axis</td>
+                                </tr>
+                     </tbody>
+                   </table>
+                   <br>
+                   <h5>For practice Visit: <a href="https://flexboxfroggy.com/">flexboxfroggy</a></h5>
+                  </section>
+          </section>
         </section>
 
         <section data-transition="concave">
